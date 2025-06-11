@@ -1,5 +1,5 @@
-import { initializeDatabase } from "./db/db.connect";
-import Event from "./models/event.model";
+const { initializeDatabase } = require("./db/db.connect");
+const Event = require("./models/event.model");
 initializeDatabase();
 
 const express = require("express");
