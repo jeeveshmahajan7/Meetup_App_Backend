@@ -61,3 +61,8 @@ app.post("/events", async (req, res) => {
     res.status(500).json({ message: "Failed to create new Event." });
   }
 });
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log("Server is running on PORT:", PORT);
+});
